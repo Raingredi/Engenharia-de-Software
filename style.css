@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: rgba(228, 224, 224, 0.826);
+    background-color: rgba(237, 234, 234, 0.885);
     font-family: 'Times New Roman', Times, serif;
 }
 
 header{
-    background-color: rgba(49, 154, 154, 0.838);
+    background-color: rgba(3, 3, 69, 0.779);
     color: white;
     padding: 5%;
     text-align: center;
@@ -24,7 +24,21 @@ header{
 main{
     background-color: white;
     text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
     padding: 3%;
     width: 30%;
     margin: auto;
+}
+
+section > a {
+    background-color: rgba(3, 3, 69, 0.801);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 3%;
+    border-radius: 50px;
 }
