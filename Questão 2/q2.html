@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questão 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Teste de Software e Gerência de Configuração de Software</h1>
     </header>
+    <main>
+        <p>Considere trecho de código em C que implementa uma função para verificar se um número é primo:</p>
+        <pre><code>
+            #include <stdio.h>
+            #include <stdbool.h>
+            
+            bool ehPrimo(int num) {
+                if (num <= 1) {
+                    return false;
+                }
+                
+                for (int i = 2; i * i <= num; i++) {
+                    if (num % i == 0) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            }
+            
+            int main() {
+                int numero = 29;
+                if (ehPrimo(numero)) {
+                    printf("%d é primo\n", numero);
+                } else {
+                    printf("%d não é primo\n", numero);
+                }
+                return 0;
+            }
+        </code></pre>
+        <section>
+            <p>Utilizando o teste estrutural (também conhecido como teste de caixa branca), responda o que se pede a seguir:</p>
+            <ol>
+                <li>Qual o grafo de fluxo de controle para este código?</li>
+                <li>Quantos caminhos independentes existem neste código?</li>
+                <li>Liste todos os caminhos independentes identificados.</li>
+                <li>Para cada caminho independente, descreva um caso de teste que garantiria a cobertura desse caminho.</li>
+                <li>Quais são as condições lógicas presentes no código?</li>
+                <li>Descreva um conjunto mínimo de casos de teste que garantam a cobertura de todas as condições lógicas.</li>
+                <li>Descreva os casos de teste usando análise de valor limite considerando que um número primo é aquele que é maior que 1 é divisível apenas por 1 e por ele mesmo.</li>
+            </ol></section>
+    </main>
 </body>
 </html>

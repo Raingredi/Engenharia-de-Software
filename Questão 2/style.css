@@ -18,13 +18,14 @@ header {
 
 header > h1 {
     color: rgb(255, 255, 255);
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: #000 2px 3px 2px;
 }
 
 main {
     width: 1100px;
     margin: auto;
+    background-color: white;
 }
 
 h2 {
@@ -32,24 +33,28 @@ h2 {
     font-size: 1.5em;
     padding: 30px 10px;
 }
-
-ul > li{
-    padding: 10px;
-    text-align: justify;
+pre {
+    border: 1px solid #ddd;
+    overflow-x: auto;
 }
-
-li > img {
-    width: 230px;
-    height: 200px;
-    border-radius: 10px;
+code {
+    font-family: Consolas, "Courier New", Courier, monospace;
 }
 
 p{
+    font-size: 1.1em;
     padding: 10px;
-    text-indent: 40px;
+    font-weight: bolder;
 }
 
-section {
-    padding: 3%;
-    background-color: rgba(185, 203, 235, 0.486);
+section{
+    margin: 2% 6%;
+}
+ol{
+    list-style-type: lower-alpha;
+}
+
+li{
+    padding:20px;
+    font-size: 1.1em;
 }
