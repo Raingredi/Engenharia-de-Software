@@ -22,9 +22,30 @@
             </li>
             <li><p class="enunciado">Explique o padrão de projeto Strategy.</p>
                 <p class="resposta"> 
-                    Dentre os vários padróes de projetos existentes há o Strategy, é classificado como um padrão comportamental de objeto pois utiliza a composição de objetos ao invés de herança. 
-                </p>
+                    Dentre os vários padróes de projetos existentes há o Strategy, é classificado como um padrão comportamental de objeto pois utiliza a composição de objetos ao invés de herança. Ele permite definir uma família de algoritmos, colocá-los em classes separadas e torná-los intercambiáveis. 
+                </p> <br>
+                <h4 class="resposta">Problema</h3> <br>
+                <p class="resposta">Imagine que você está desenvolvendo um sistema de e-commerce. Inicialmente, ele só suportava pagamentos via cartão de crédito. No entanto, conforme o sistema evoluiu, você adicionou suporte para pagamentos via PayPal, transferência bancária e outras formas de pagamento, como criptomoedas.</p>
+                <p class="resposta">O código de processamento de pagamento ficou sobrecarregado e difícil de manter, pois cada novo método de pagamento aumentava a complexidade da classe principal. Alterações ou correções de bugs em um método de pagamento afetavam o código inteiro, tornando a manutenção e a colaboração em equipe difíceis.</p> <br>
+
+                <h4 class="resposta">Solução</h3> <br>
+                <p class="resposta">O padrão Strategy sugere extrair os diferentes métodos de pagamento para classes separadas, chamadas estratégias. A classe principal, conhecida como Contexto, mantém uma referência a uma dessas estratégias e delega a execução do processamento de pagamento a ela.</p>
+                <p class="resposta">O Contexto não é responsável por selecionar o método de pagamento apropriado; o cliente é quem define a estratégia desejada e a passa para o contexto. O contexto interage com as estratégias através de uma interface comum, permitindo que novos métodos de pagamento sejam adicionados ou existentes sejam modificados sem alterar o código do contexto.</p> <br>
+
+                <h4 class="resposta">Aplicabilidade</h3> <br>
+                <ul>
+                    <li>Variantes de Algoritmo: Quando você precisa usar diferentes variantes de um algoritmo dentro de um objeto e ser capaz de trocar entre eles durante a execução.</li>
+                    <li>Isolamento de Algoritmos: Para isolar a lógica de negócios dos detalhes de implementação de algoritmos que podem não ser importantes no contexto da lógica principal.</li>
+                    <li>Condicionais Grandes: Quando sua classe tem uma estrutura condicional complexa que seleciona diferentes variantes de um algoritmo.</li>
+                </ul>
         </ol>
+        <section>
+            <h2>Referências</h2>
+            <ul>
+                <li>SHVETS, Alexander. Mergulho nos Padrões de Projeto. [S.l.]: [s.n.], 2020. Disponível em: <a href="https://refactoring.guru/pt-br/design-patterns/book" target="_blank">https://refactoring.guru/pt-br/design-patterns/book</a>. Acesso em: 18 jul. 2024.</li> <br>
+                <li>GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. Tradução de Luiz A. Meirelles Salgado. Consultoria, supervisão e revisão técnica desta edição: Fabiano Borges Paulo. 1. ed. Porto Alegre: Bookman, 2000. Reimpressão 2008.</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
