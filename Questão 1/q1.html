@@ -51,15 +51,19 @@
             <ul>
                 <li>
                     <h3>Criando uma conta no GitHub</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam itaque reprehenderit sint ab, autem quia a est? Numquam dolores quos, pariatur molestiae eius reiciendis impedit, quia ullam fugiat ab eaque!</p></li>
+                    <p>Para começar a usar o GitHub, você deve criar uma conta na plataforma. Visite GitHub.com e clique em "Sign up". Você precisará fornecer um nome de usuário, e-mail e senha. Após o registro, você pode configurar seu perfil, incluindo informações adicionais como uma foto de perfil e uma descrição. Segue abaixo as imagens da tela inicial, tela de login e a primeira tela de cadatro em que o usuário faz o seu registro para ter acesso ao repositório.</p></li>
+                    <img src="imagens/telaInicialGithub.png" alt=""><br>
+                    <img src="imagens/Login.png" alt=""><br>
+                    <img src="imagens/tela de cadastro.png" alt=""><br>
                 <li>
                     <h3>Instalando o Git e configurando no GitHub</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos, culpa, deserunt quaerat ducimus aut, rem similique eos dolor dolores cupiditate? Iste ipsam consequatur ea id quasi expedita aliquam ab?</p>
+                    <p>O Git é o sistema de controle de versão que o GitHub utiliza para rastrear mudanças no código. Para usar o Git, você precisa instalá-lo no seu sistema. No Windows, baixe o instalador do  <a href="https://git-scm.com/download/win">site oficial do Git</a> e siga as instruções. No macOS, você pode usar o Homebrew com o comando brew install git. No Linux, use o gerenciador de pacotes da sua distribuição, por exemplo, sudo apt install git para distribuições baseadas em Debian. Após a instalação, configure o Git com seu nome e e-mail, que serão usados para identificar suas alterações no código.</p>
                 </li>
                 <li>
                     <h3>Primeiros passos: criando e clonando repositórios</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptatem modi enim, voluptates repudiandae delectus consequatur illum asperiores nemo maiores quo quibusdam ut impedit natus itaque architecto magni corporis maxime.</p>
+                    <p>Uma vez que o Git está configurado, você pode começar a trabalhar com repositórios. Para criar um novo repositório, acesse sua conta no GitHub e clique em "New repository". Forneça um nome para o repositório, uma descrição opcional e defina suas configurações. Após criar o repositório, você pode cloná-lo para seu computador local usando o comando git clone <URL do repositório>. Isso cria uma cópia local do repositório, permitindo que você comece a adicionar e modificar arquivos localmente.</p>
                 </li>
+                <img src="imagens/Repositório.png" alt="">
             </ul>
         </section>
         <section>
@@ -67,19 +71,28 @@
             <ul>
                 <li>
                     <h3>Estrutura de um repositório Git</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam itaque reprehenderit sint ab, autem quia a est? Numquam dolores quos, pariatur molestiae eius reiciendis impedit, quia ullam fugiat ab eaque!</p></li>
+                    <p>Um repositório Git tem uma estrutura interna que inclui o diretório .git, que contém todos os arquivos e informações necessárias para o controle de versão. O diretório de trabalho é onde você faz alterações nos arquivos do projeto. A área de staging é onde você prepara arquivos antes de confirmá-los no repositório. Entender essa estrutura é crucial para usar o Git de maneira eficaz e gerenciar suas mudanças de código.</p></li>
                 <li>
                     <h3>Iniciando um repositório</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos, culpa, deserunt quaerat ducimus aut, rem similique eos dolor dolores cupiditate? Iste ipsam consequatur ea id quasi expedita aliquam ab?</p>
+                    <p>Para iniciar um repositório Git em um novo projeto, navegue até o diretório do projeto e execute o comando git init. Esse comando cria um novo diretório .git que rastreará todas as mudanças no código. A partir deste ponto, você pode começar a adicionar arquivos ao repositório, fazer commits e usar outros comandos Git para gerenciar seu projeto.</p>
                 </li>
                 <li>
                     <h3>Principais comandos: git init, git add, git commit, git push, git pull</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptatem modi enim, voluptates repudiandae delectus consequatur illum asperiores nemo maiores quo quibusdam ut impedit natus itaque architecto magni corporis maxime.</p>
+                    <ul>
+                        <li>git init: Inicializa um novo repositório Git no diretório atual.</li>
+                        <li>git add &lt;arquivo&gt;: Adiciona arquivos ao staging area, preparando-os para o commit.</li>
+                        <li>git commit -m "mensagem": Cria um commit com a mensagem fornecida, registrando uma nova versão dos arquivos.</li>
+                        <li>git push: Envia commits do repositório local para o repositório remoto no GitHub.</li>
+                        <li>git pull: Atualiza o repositório local com as mudanças feitas no repositório remoto.</li>
+                    </ul>
                 </li>
                 <li>
                     <h3>Gerenciamento de branches</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus consequuntur hic maiores commodi modi explicabo vel impedit aut. Sed iste reiciendis dolore, repellendus nihil suscipit saepe optio esse velit.</p>
+                    <p>Branches (ramificações) permitem que você trabalhe em diferentes versões do seu projeto simultaneamente. Você pode criar uma nova branch com git branch nome-da-branch, trocar para uma branch existente com git checkout nome-da-branch, e mesclar branches com git merge nome-da-branch. O gerenciamento eficaz de branches é essencial para organizar o desenvolvimento e facilitar a integração de novas funcionalidades.</p>
+                    
+                <img src="imagens/novaBranche.png" alt="">
                 </li>
+                <img src="imagens/branche.png" alt="">
             </ul>
         </section>
         <section>
@@ -87,18 +100,18 @@
             <ul>
                 <li>
                     <h3>Clonando e forkeando repositórios</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam itaque reprehenderit sint ab, autem quia a est? Numquam dolores quos, pariatur molestiae eius reiciendis impedit, quia ullam fugiat ab eaque!</p></li>
+                    <p>Para colaborar em projetos, você pode clonar ou forkeá-los. Clonar um repositório cria uma cópia local completa, permitindo que você faça alterações e envie-as de volta para o repositório original. Forkeando um repositório, você cria uma cópia independente no seu perfil GitHub, permitindo que você faça alterações sem afetar o repositório original. Forks são úteis para contribuições a projetos de código aberto e experimentações.</p></li>
                 <li>
                     <h3>Pull requests: como criar e gerenciar</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos, culpa, deserunt quaerat ducimus aut, rem similique eos dolor dolores cupiditate? Iste ipsam consequatur ea id quasi expedita aliquam ab?</p>
+                    <p>Pull Requests (PRs) são uma forma de solicitar a integração de suas mudanças em um projeto. Após fazer alterações em uma branch, você pode criar um PR no GitHub para que outros revisem e comentem suas mudanças. O PR fornece uma plataforma para discussão e revisão antes de mesclar as alterações no projeto principal. Gerenciar PRs envolve revisar código, discutir melhorias e aceitar ou rejeitar mudanças.</p>
                 </li>
                 <li>
                     <h3>Revisão de código e merge de pull requests</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptatem modi enim, voluptates repudiandae delectus consequatur illum asperiores nemo maiores quo quibusdam ut impedit natus itaque architecto magni corporis maxime.</p>
+                    <p>Revisar código é uma etapa crítica para garantir a qualidade e integridade do software. No GitHub, você pode revisar o código de um PR, fazer comentários e sugerir alterações. Após a revisão, o PR pode ser mesclado ao projeto principal usando o botão "Merge pull request". O processo de merge deve ser feito com cuidado para evitar conflitos e garantir que as mudanças integrem-se corretamente.</p>
                 </li>
                 <li>
                     <h3>Resolvendo conflitos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus consequuntur hic maiores commodi modi explicabo vel impedit aut. Sed iste reiciendis dolore, repellendus nihil suscipit saepe optio esse velit.</p>
+                    <p>Conflitos ocorrem quando alterações em branches diferentes não podem ser mescladas automaticamente. GitHub indica conflitos durante o processo de merge. Para resolver conflitos, edite os arquivos conflitantes e faça as alterações necessárias. Após resolver os conflitos, adicione os arquivos resolvidos ao staging area, faça um commit e conclua o merge.</p>
                 </li>
             </ul>
         </section>
@@ -107,32 +120,45 @@
             <ul>
                 <li>
                     <h3>GitHub Actions: automatizando fluxos de trabalho</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam itaque reprehenderit sint ab, autem quia a est? Numquam dolores quos, pariatur molestiae eius reiciendis impedit, quia ullam fugiat ab eaque!</p></li>
+                    <p>GitHub Actions permite automatizar fluxos de trabalho diretamente no GitHub. Você pode criar workflows que automatizam tarefas como build, teste e deployment. Workflow é definido usando arquivos YAML no diretório .github/workflows. Por exemplo, um workflow simples pode rodar testes automatizados sempre que você faz um push para o repositório.</p></li>
                 <li>
                     <h3>Issues e Projects: gerenciamento de tarefas e projetos</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos, culpa, deserunt quaerat ducimus aut, rem similique eos dolor dolores cupiditate? Iste ipsam consequatur ea id quasi expedita aliquam ab?</p>
+                    <p>Issues são usadas para rastrear bugs, melhorias e tarefas no seu projeto. Você pode criar issues para relatar problemas e atribuí-las a membros da equipe. GitHub Projects usa quadros Kanban para gerenciar tarefas e organizar o trabalho. Adicione cards para issues e tarefas, mova-os entre colunas e acompanhe o progresso.</p>
                 </li>
                 <li>
                     <h3>GitHub Pages: criando sites estáticos com GitHub</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptatem modi enim, voluptates repudiandae delectus consequatur illum asperiores nemo maiores quo quibusdam ut impedit natus itaque architecto magni corporis maxime.</p>
+                    <p>GitHub Pages é uma funcionalidade que permite criar e hospedar sites estáticos diretamente de um repositório no GitHub. Configure GitHub Pages nas configurações do repositório e escolha a branch que contém os arquivos do seu site. GitHub Pages é ideal para hospedar documentação, blogs e sites pessoais.</p>
                 </li>
                 <li>
                     <h3>Integrações e APIs</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus consequuntur hic maiores commodi modi explicabo vel impedit aut. Sed iste reiciendis dolore, repellendus nihil suscipit saepe optio esse velit.</p>
+                    <p>GitHub oferece várias integrações com serviços externos, como Slack e Jira, para melhorar a colaboração e o gerenciamento de projetos. Além disso, a API do GitHub permite que você acesse e gerencie dados do repositório programaticamente, facilitando a automação e a personalização de processos.</p>
                 </li>
             </ul>
         </section>
         <section>
-            <h2>Metodologia</h2>
-            <p>Pesquisa e Referências: Utilização de documentação oficial do GitHub, tutoriais, e livros especializados.
-                Exemplos Práticos: Inclusão de exemplos reais de uso, com explicações passo a passo.
-                Exercícios: Atividades práticas para reforçar o aprendizado.
-                Recursos Visuais: Capturas de tela, diagramas e fluxos para facilitar a compreensão.
-                </p>
-        </section>
-        <section>
-            <h2>Ferramentas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, officiis a. Velit vero rerum, repellendus in quae cupiditate? Sequi voluptas debitis quidem explicabo deleniti quisquam? Itaque pariatur maiores illum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim impedit temporibus, distinctio nam illo inventore. Recusandae corrupti alias facilis expedita similique nisi repellat praesentium labore fugit tempora, error officiis.</p>
+            <h2>Boas Práticas e Dicas</h2>
+            <ul>
+                <li>
+                    <h3>Escrevendo bons commits e mensagens</h3>
+                    <p>Mensagens de commit claras e informativas são essenciais para a colaboração e o rastreamento de mudanças. Uma boa mensagem de commit deve descrever brevemente o que foi alterado e por quê. Use o tempo presente e evite mensagens genéricas como "alterações diversas".</p></li>
+                <li>
+                    <h3>Estrutura organizacional de repositórios</h3>
+                    <p>Organizar seu repositório de forma clara ajuda na manutenção e na colaboração. Mantenha uma estrutura de pastas lógica, utilize arquivos de configuração como .gitignore para especificar arquivos a serem ignorados e inclua</p>
+                </li>
+                <li>
+                    <h3>Segurança e permissões</h3>
+                    <p>Gerencie quem pode acessar e modificar seu repositório ajustando as permissões no GitHub. Use chaves SSH para garantir uma conexão segura e configurar o acesso aos seus repositórios de forma segura e eficiente.</p>
+                </li>
+                <li>
+                    <h3>Uso de templates e arquivos de configuração (.gitignore, README.md)</h3>
+                    <ul>
+                        <li>.gitignore: Define quais arquivos e diretórios não devem ser rastreados pelo Git. Adicione padrões para excluir arquivos temporários ou de configuração local.</li>
+                        <li>README.md: Crie uma documentação clara e útil para o seu projeto, incluindo instruções de uso, instalação e contribuição.</li>
+                    </ul>
+                </li>
+                <img src="imagens/Readme.png" alt="">
+                <img src="imagens/Readmemd.png" alt="">
+            </ul>
         </section>
         <section>
             <h2>Referências</h2>

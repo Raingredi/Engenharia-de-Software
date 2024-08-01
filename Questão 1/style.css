@@ -39,11 +39,15 @@ ul > li{
 }
 
 li > img {
-    width: 230px;
-    height: 200px;
+    width: 300px;
+    height: 230px;
     border-radius: 10px;
 }
-
+img{
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+}
 p{
     padding: 10px;
     text-indent: 40px;
@@ -51,5 +55,5 @@ p{
 
 section {
     padding: 3%;
-    background-color: rgba(185, 203, 235, 0.486);
+    background-color: rgba(185, 203, 235, 0.289);
 }
